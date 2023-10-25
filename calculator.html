@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./calculator.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="p-2 text text-bg-dark">
+
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="20" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-4 text-white">Facts</a></li>
+                    <li><a href="facts.html" class="nav-link px-4 text-white">Calculator</a></li>
+
+
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-light text-bg-light" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn btn-light px-3"> <a href="gethelp.html"> Get help </a>
+                    </button>
+
+
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row">
+
+                <div class="col-9 main-content">
+                    <br>
+                    <h class="title">Price Calculator</h>
+
+
+
+                    <div class="row">
+                        <div class="col-3">Type of drug:</div>
+
+                        <div class="col-2"><select id="type" class="form-select">
+                                <option>Morphine</option>
+                                <option selected="selected">Heroin</option>
+                            </select></div>
+                    </div>
+
+                    <br>
+                    <br>
+
+
+                    <div class="row">
+                        <div class="col-2">Ammount:</div>
+                        <div class="col-2"><input id="ammount" class="form-control"></div>
+                        <div class="col-2"><select id="au" class="form-select">
+                                <option>mg</option>
+                                <option selected="selected"> g</option>
+                            </select></div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-2">Purity:</div>
+                        <div class="col-3">
+                            <input type="range" id="purity" min="0" max="100" step="10" value="90" class="form-range">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            <button id="price1" clss="btn btn-success">Price</button>
+                        </div>
+                        <div class="col-2">
+                            <div id="result1" class="box"></div>
+                        </div>
+                        <div class="col-2">
+                            <input value="Artificial money" readonly class="form-control form-control-plaintext">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 sidebar">
+
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-dark"><a
+                                class="link-dark link-opacity-25-hover link-offset-2 link-underline link-underline-opacity-0"
+                                target="_blank" href="https://nida.nih.gov/"> National Institute on Drug Abuse </a></li>
+                        <li class="list-group-item list-group-item-dark"><a
+                                class="link-dark link-opacity-25-hover link-offset-2 link-underline link-underline-opacity-0"
+                                href="https://www.who.int/health-topics/drugs-psychoactive#tab=tab_1"> World Health
+                                Organization </a></li>
+                        <li class="list-group-item list-group-item-dark"><a
+                                class="link-dark link-opacity-25-hover link-offset-2 link-underline link-underline-opacity-0"
+                                href="https://medlineplus.gov/druguseandaddiction.html"> Drug Use and Addiction </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Prepared by Katia</font>
+                        </font>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
